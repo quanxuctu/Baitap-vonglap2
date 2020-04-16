@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function displayFibonaci(oreca) {
+        let s1 = 0;
+        let s2 = 1;
+        let count =2;
+        document.write("Output: " + s1 + " ; " + s2);
+        while (count<oreca){
+            let s3 = s1 + s2;
+            document.write(" ; " + s3);
+            count ++;
+            s1=s2;
+            s2=s3;
+        }
+    }
+    let number = +prompt("Input: ");
+    displayFibonaci(number);
+</script>
+</body>
+</html>
